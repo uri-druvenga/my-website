@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+	<!-- Copyright Uri Druvenga!!! 2025 -->
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Uri Druvenga</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<div id="constellation">
+			<canvas id="constellation-canvas"></canvas>
+			<!-- If canvas is not supported, will show a blank background -->
+		</div>
+		<header>
+			<span id="name-logo" class="sans-extended">Uri Druvenga</span>
+			<nav>
+				<a class="nav-link emph-link" href="index.html">Home</a>
+				<a class="nav-link" href="html/about-me.html">About Me</a>
+				<a class="nav-link" href="html/training.html">Training</a>
+				<a class="nav-link" href="html/experience.html">Experience</a>
+				<a class="nav-link" href="html/projects.html">Projects</a>
+			</nav>
+			<svg xmlns="http://www.w3.org/2000/svg" id="burger" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+				<path d="M120-240 v-80 h720 v80 H120 Z m0-200 v-80 h720 v80 H120 Z m0-200 v-80 h720 v80 H120 Z" />
+			</svg>
+		</header>
+		<div id="title-name">
+			<canvas id="name-canvas" height="100">
+				<h1 id="fallback-title-name" class="sans-extended">Uri Druvenga</h1>
+			</canvas>
+			<!-- If canvas is not supported, shows a boring heading with my name -->
+			<h2 id="aboutme">Welcome to my website!</h2>
+		</div>
+		<main id="main-content">
+			<section class="page-tile" id="training-sum">
+				<div class="page-summary">
+					<a class="page-title nav-link" href="html/training.html">Training</a>
+					<p class="page-desc">Schoolwork, careers, and other experience I have.</p>
+				</div>
+				<div class="page-examples">
+					<!--<img src="assets/images/placeholder.jpeg" alt="An ordinary placeholder">-->
+				</div>
+			</section>
+			
+			<section class="page-tile" id="experience-sum">
+				<div class="page-summary">
+					<a class="page-title nav-link" href="html/experience">Experience</a>
+					<p class="page-desc">The specific skills I have learned programming.</p>
+				</div>
+				<div class="page-examples">
+					<!-- This area is going to have one of those
+						 "automatic scrolling" things that show various projects I have -->
+					<!--<img src="assets/images/placeholder.jpeg" alt="An ordinary placeholder">-->
+				</div>
+			</section>
+			
+			<section class="page-tile" id="projects-sum">
+				<div class="page-summary">
+					<a class="page-title nav-link" href="html/projects.html">Projects</a>
+					<p class="page-desc">Various things I've coded, for one reason or another.</p>
+				</div>
+				<div class="page-examples">
+					<!--<img src="assets/images/placeholder.jpeg" alt="An ordinary placeholder">-->
+				</div>
+			</section>
+		</main>
+		<footer>
+			<a href="html/contact-me.html">Contact Me</a>
+			<img id="secret-img">
+		</footer>
+		
+		<!-- Cool features -->
+		<script src="js/constel.js"></script>
+		<script src="js/cool_name.js"></script>
+		<script src="js/egg.js"></script>
+		
+		<!-- Fancy mobile support / accessibility -->
+		<script>
+			// Adds click events
+			const navBar = document.querySelector("nav");
+			document.querySelector("#burger").addEventListener("click", function() {
+				navBar.classList.toggle("reveal");
+			});
+		</script>
+	</body>
+</html>
