@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+	<!-- Copyright Uri Druvenga!!! 2025 -->
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Projects</title>
+		<link rel="stylesheet" href="../styles.css">
+	</head>
+	<body>
+		<div id="constellation">
+			<canvas id="constellation-canvas"></canvas>
+			<!-- If canvas is not supported, will show a black background -->
+		</div>
+		<header>
+			<span id="name-logo" class="sans-extended">Uri Druvenga</span>
+			<nav>
+				<a class="nav-link" href="../index.html">Home</a>
+				<a class="nav-link" href="about-me.html">About Me</a>
+				<a class="nav-link" href="training.html">Training</a>
+				<a class="nav-link" href="experience.html">Experience</a>
+				<a class="nav-link emph-link" href="projects.html">Projects</a>
+			</nav>
+			<svg xmlns="http://www.w3.org/2000/svg" id="burger" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+				<path d="M120-240 v-80 h720 v80 H120 Z m0-200 v-80 h720 v80 H120 Z m0-200 v-80 h720 v80 H120 Z" />
+			</svg>
+		</header>
+		<div id="title-name">
+			<canvas id="name-canvas" width="650" height="100">
+				<h1 id="fallback-title-name" class="sans-extended">Uri Druvenga</h1>
+			</canvas>
+			<!-- If canvas is not supported, shows a boring heading with my name -->
+			<h2 id="aboutme">Projects</h2>
+		</div>
+		<main id="main-content">
+			<section class="content-tile" id="projects-content">
+				<h2 id="content-descriptor">Various things I've coded for school, work, or free time.</h2>
+
+				All my projects were unfortunately lost with my dead computer :(
+				<br>
+				I should have backed them up better
+			</section>
+		</main>
+		<footer>
+			<a href="html/contact-me.html">Contact Me</a>
+			<img id="secret-img">
+		</footer>
+		
+		<!-- Cool features -->
+		<script src="../js/constel.js"></script>
+		<script src="../js/cool_name.js"></script>
+		<script src="../js/egg.js"></script>
+		
+		<!-- Fancy mobile support -->
+		<script>
+			// Makes the burger button clickable
+			const navBar = document.querySelector("nav");
+			document.querySelector("#burger").addEventListener("click", function() {
+				navBar.classList.toggle("reveal");
+			});
+		</script>
+	</body>
+</html>
